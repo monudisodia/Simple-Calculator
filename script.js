@@ -25,7 +25,15 @@ reset.addEventListener('click',()=>{
 })
 
 ans.addEventListener('click',()=>{
-    let evaluat= eval(input.value);
+//     let evaluat= eval(input.value);
 
-    input.value=evaluat
+//     input.value=evaluat
+        try{
+        let evaluat= eval(input.value);
+
+        input.value=evaluat
+    }
+    catch(err){
+        alert("Invalid Input");
+    }
 })
