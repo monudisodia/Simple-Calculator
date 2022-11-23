@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.container{
+    /* align-self: center; */
+    width: 320px;
+    height: 600px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 100px;
+
+}
+.input-output{
+    /* overflow: auto; */
+    
+}
+
+
+.container-2{
+
+    overflow: hidden;
+}
+
+#input{
+    width: 316px;
+    height: 195px;
+    border: none;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    font-size: xx-large;
+    text-align: end;
+    overflow-wrap: break-word;
+}
+
+#plus,#minus,#multiply,#divide{
+    background-color: rgb(134, 134, 134);
+    /* color: white; */
+    font-size: x-large;
+}
+
+#numbers{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.num{
+    width: 83px;
+    height:90px;
+    margin: -3px;
+    border: none;
+    overflow: hidden;
+    font-size: x-large;
+    cursor: pointer;
+    
+
+}
+
+
+.answer{
+    /* margin-top: 3px; */
+    width: 320px;
+    /* margin-left: 1px; */
+    height: 70px;
+    border: none;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    background-color: maroon;
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+}
