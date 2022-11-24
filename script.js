@@ -7,28 +7,33 @@ let nums=document.querySelectorAll('.num')
 
 var input=document.getElementById('input')
 
-
+//------------------------- Accessing button text function-----------------
 input.value= '';
 for(let num of nums){
 
     num.addEventListener('click',(e)=>{
+
+
          str =''
         buttonText=e.target.innerText;
         input.value += buttonText;
-
+ 
     })
 }
 
+
+//------------------------- reset button function-----------------
 reset.addEventListener('click',()=>{
 
     input.value=''
 })
 
-ans.addEventListener('click',()=>{
-//     let evaluat= eval(input.value);
 
-//     input.value=evaluat
-        try{
+//------------------------- Calculation button function-----------------
+ans.addEventListener('click',()=>{
+
+
+    try{
         let evaluat= eval(input.value);
 
         input.value=evaluat
@@ -36,4 +41,5 @@ ans.addEventListener('click',()=>{
     catch(err){
         alert("Invalid Input");
     }
+    
 })
